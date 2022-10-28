@@ -1,4 +1,4 @@
-Privacy-oriented Personal Device Experience Project (PPDEP)
+# Privacy-oriented Personal Device Experience Project (PPDEP)
 
 **An extensive guide for running an alternative smartphone operating system as a daily driver, stripped out of vendors' analytics, telemetry or most of the personal data that is typically sent via the current most popular phone brands.**
 
