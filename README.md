@@ -113,7 +113,7 @@ You see, while not every single device available on the market can benefit from 
 
 There's even been some news on the internet about it: **[Google Pixel 3A achieves 100% Ubuntu Touch support score](https://tuxphones.com/google-pixel-3a-full-stable-ubports-linux-ubuntu-touch-feature-support/)**.
 
-[insert screenshot from the website here.jpeg]
+![ScreenShot](https://github.com/Kipferl-OS/Privacy-oriented-Personal-Device-Experience-Project-PPDEP/blob/main/resources/Pixel%203A-UBPorts-description.png?raw=true)
 
 Moreover, as we'll be checking every step together, compared to a "traditional" way of installing custom ROMs, the approach taken via UBPorts is much more simplified, fail-proof (so that you do not end up breaking your device), and prompt. Trust me, over all the phones that I have been tweaking via the custom ROM development, getting Ubuntu Touch up and running on my pixel phone proved to be less stressful and problematic.
 
@@ -145,17 +145,19 @@ First, let us make sure everything is properly updated & upgraded on our system.
  `sudo apt get update`
 `sudo apt upgrade` 
 
-[insert 1.png + 2.png here]
+![ScreenShot](https://github.com/Kipferl-OS/Privacy-oriented-Personal-Device-Experience-Project-PPDEP/blob/main/resources/sudo-apt-update-command.png)
+
+![ScreenShot](https://github.com/Kipferl-OS/Privacy-oriented-Personal-Device-Experience-Project-PPDEP/blob/main/resources/sudo-apt-upgrade-command.png)
 
 If everything got upgraded successfully (make sure to write 'y' as in 'yes' when running the latter command), we continue with the installation of the tools themselves:
 
 `sudo apt install android-tools-adb android-tools-fastboot -y`
 
-[insert 3.png here]
+![ScreenShot](https://github.com/Kipferl-OS/Privacy-oriented-Personal-Device-Experience-Project-PPDEP/blob/main/resources/installing-ADB-tools-linux.png)
 
 We can see if everything got installed successfully by checking out the installed version. If the terminal shows it accordingly & is being recognized by the system, we're good to go! You can do that by writing `adb version` via the terminal:
 
-[insert 4.png here]
+![ScreenShot](https://github.com/Kipferl-OS/Privacy-oriented-Personal-Device-Experience-Project-PPDEP/blob/main/resources/adb-version-command.png)
 
 The adb server which allows the connectivity between your device and desktop computer/laptop typically is available automatically, but in case it might not start by itself, you can always start first by running this command: `sudo adb start-server`. At last, whenever required, we can kill the connection through `sudo adb kill-server`.
 
@@ -177,13 +179,13 @@ Let us take it in-depth, one by one:
 ### 1. Preparatory step.
 Head over [this link](https://developers.google.com/android/images#sargo) and search for the factory image code titled **PQ3B.190801.002**. This was one of the initial versions Google Pixel 3A devices came from the factory when the phone was released, and the reason we're getting it is that Ubuntu Touch development was based on that practical software version, therefore we need to have it running on our phone as a foundation to the ported alternative OS. 
 
-[insert 1.jpg from 2nd folder here]
+![ScreenShot](https://github.com/Kipferl-OS/Privacy-oriented-Personal-Device-Experience-Project-PPDEP/blob/main/resources/sargo-device-factory-build.png)
 
 If you look closely, be aware that the same factory version is available for its bigger brother, 3A XL, and we do NOT want that one. They're different, just like the rest of humans are...hah...Anyway, like in the screenshot above, there's a hyperlink next to the factory version which reads as *Flash*. Click on that one.
 
 Now, before we jump more into it, sadly, I don't like saying this, but please **make sure that you are running a Chromium-based version of your internet browser**. If you dislike Chrome(like I do), go ahead and look for Chromium or Brave Browser. These options are based on Chrome's main source code but are not as intrusive as the original Google's developed browser is. As the flashing automatic process is still provided by Google, we have no choice but to stick with either any Chromium-based browser, until we get the factory version on our phones. Meanwhile, take a look at the screenshot below, this is what's currently running on my Google Pixel 3A before flashing so that you'll be able to see the difference at the end when getting the factory one on the phone itself.
 
-[insert iPhone picture 1.jpg here]
+![image](https://raw.githubusercontent.com/Kipferl-OS/Privacy-oriented-Personal-Device-Experience-Project-PPDEP/main/resources/about-phone.JPG)
 
 It says that I'm running the latest Google officially provided software version, Android 12, with the latest security patch.
 Also, now that you're on the settings menu too, head over to the Build Number (at the end of the menu) and tap on it a couple of times, until you see: *You are now a developer*.
@@ -192,7 +194,7 @@ After that, head over back to the system, and you should see the Developer optio
 
 Now go grab that juicy (I should reconsider my vocabulary) USB cable and connect it to your computer. You will be getting 1-2 prompts about authorizing ADB connectivity with your computer on your phone, make sure to allow that, and you will be good to go. To make sure you're connected with your device, head over to your computer's terminal (whichever one you have) and type `adb devices`. If it's all done correctly, your pixel phone should be recognized, just like here: 
 
-[insert 3.jpg from 2nd folder here]
+![ScreenShot](https://github.com/Kipferl-OS/Privacy-oriented-Personal-Device-Experience-Project-PPDEP/blob/main/resources/adb-device-recognition.png)
 
 In case you didn't notice, my first command sent back the fact that the device is *UNAUTHORIZED*, mainly because I got the prompt of allowing USB debugging connections on my phone, right after I wrote the command. After allowing it, the connection was successfully made.
 
@@ -204,17 +206,21 @@ Your phone is going to shut down by itself and turn on back with a sketchy "hack
 
 `fastboot flashing unlock` You can see the commands that I have written on my terminal below as well:
 
-[insert 6.png from 2nd folder here]
+![ScreenShot](https://github.com/Kipferl-OS/Privacy-oriented-Personal-Device-Experience-Project-PPDEP/blob/main/resources/fastboot-flashing-unlock-command.png)
 
-Your phone(actually Google itself) is going to ask you if you want to risk unlocking the bootloader blablabla...Gibberish! But don't rush too fast, make sure you press on either the volume buttons so that the option that is right next to the power button will display *Unlock the bootloader*. Then you can let the magic happen. If everything went well, you should see your phone being booted with the *unlocked* (on a red text) right at the same *Device state*. Now you can go ahead and boot your phone back into the system. You might be getting Google's last attempt to make you realize how much you've sinned for daring to go out of their ecosystem with some pseudo-security warning, but don't worry, we know what we're doing. Oh, and by the way, your phone should have also wiped most of the data, so as I stated before, make sure to have taken a backup before this if needed. Here's also the screenshot of the bootloader stating that is unlocked:
+Your phone(actually Google itself) is going to ask you if you want to risk unlocking the bootloader blablabla...Gibberish! But don't rush too fast, make sure you press on either the volume buttons so that the option that is right next to the power button will display *Unlock the bootloader*. Then you can let the magic happen. If everything went well, you should see your phone being booted with the *unlocked* (on a red text) right at the same *Device state*. Now you can go ahead and boot your phone back into the system. You might be getting Google's last attempt to make you realize how much you've sinned for daring to go out of their ecosystem with some pseudo-security warning, but don't worry, we know what we're doing. Oh, and by the way, your phone should have also wiped most of the data, so as I stated before, make sure to have taken a backup before this if needed. Here's also few screenshots of the bootloader unlocking process:
 
-[insert iPhone 2nd/3rd picture here]
+![image](https://github.com/Kipferl-OS/Privacy-oriented-Personal-Device-Experience-Project-PPDEP/blob/main/resources/bootloade-locked-status.JPG?raw=false)
+
+![image](https://github.com/Kipferl-OS/Privacy-oriented-Personal-Device-Experience-Project-PPDEP/blob/main/resources/unlocking-bootloader-prompt.JPG?raw=fase)
+
+![image](https://github.com/Kipferl-OS/Privacy-oriented-Personal-Device-Experience-Project-PPDEP/blob/main/resources/bootloader-unlocked.JPG?raw=false)
 
 #### Just quickly skip through the phone's usual configuration process, and now, very important, make sure to turn USB debugging mode and the rest of the required options back again! This is essential to keep in mind, as the phone's previous settings also got reset!
 
-Good, we mainly turned the engine on, let's open the Chromium-based browser that I was talking about earlier, head over to the link above again and click on the *Flash* hyperlink. 
+Good, we mainly turned the engine on, let's open the Chromium-based browser that I was talking about earlier, head over to the link above again and click on the *Flash* hyperlink. It should promt the following webpage:
 
-[insert 4.png from 2nd folder here]
+![ScreenShot](https://github.com/Kipferl-OS/Privacy-oriented-Personal-Device-Experience-Project-PPDEP/blob/main/resources/android-flash-tool-browser.png)
 
 Before running the browser flashing suite, please remember to send your phone back to the bootloader state again. In case you're confused about this, just run again the following command:
 
@@ -235,12 +241,13 @@ As of now, this proved to be the more "sophisticated" part of this whole install
 
 Head over [Ubuntu Touch for Google Pixel 3A support website](https://devices.ubuntu-touch.io/device/sargo/) once again and download the installer from their downloads section, depending on what OS you're running on your desktop/laptop. As I've been using Ubuntu while writing this guide, I will go with the snap package as it's the fastest, but the Debian package or Appimage would have worked perfectly fine too.
 
-[insert 7.png from 2nd folder here]
-[insert 8.png from 2nd folder here]
+![ScreenShot](https://github.com/Kipferl-OS/Privacy-oriented-Personal-Device-Experience-Project-PPDEP/blob/main/resources/ubports-installer-download-section.png)
+
+![ScreenShot](https://github.com/Kipferl-OS/Privacy-oriented-Personal-Device-Experience-Project-PPDEP/blob/main/resources/ubports-installer-snap-linux.png)
 
 As usual, do make sure you have enabled developer mode (we've had our data wiped out on the device after the flashing process again), as well as the USB debugging mode & ADB timeout option. Once that's done, I hope the following quick video is also going to be enough of a showcase for the final installation step process:
 
-[insert video3.mp4 sau ce morti lui format are here]
+[ubports-installation-showcase.webm](https://user-images.githubusercontent.com/92034177/198746485-0f5507a5-8b49-444b-aaa7-f69b91dd524c.webm)
 
 If everything worked as expected on your side, congratulations, you have a complete Ubuntu powerhouse directly under your old (and possibly rusty) pixel device. You did it! You became most vendors' worst nightmare :)!
 
@@ -256,6 +263,7 @@ While I was writing out this guide, although I stated here and there, but I wasn
 At the same time, if, let's say, I had already had the Ubuntu Touch at my disposal before starting all of this, I could have easily relied on it with the daily tasks, and it is also worth mentioning that in terms of this OS's functionality, you will be noticing that there's a full operating terminal at your disposal, meaning that lots of the things that are accessible to be done through it (and implicitly via a Linux based distro) can be achieved inside the phone's environment! This is incredibly useful, especially if you are learning to become more "proficient" with Linux itself, meaning that many of the things learnt and done on the computer can be applied in the same manner on your phone. 
 
 Although it may sound more complex at the beginning, this is how I chose to perceive the idea of creating our ecosystem, free from all the application and data processing clutter, that you do not personally choose to subscribe to by your direct consent, but it's rather enforced by the currently available vendors on the market. With that, I wish you a wonderful journey ahead and I truly hope that this approach could be considered convenient enough for the typical user (highly depending on what type we are talking about and what preferences every one of us has in terms of using a modern smartphone) to stay productive, be fully connected and armed in the digital world, without having to bother about the obnoxious expense of having our personal data and privacy played with.
+
 
 
 ## Conclusions (II) Overview of a list of popular app alternatives that are privacy-oriented and available to use.
