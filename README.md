@@ -291,9 +291,13 @@ That being said, if, in this case, Ubuntu Touch (as this one was my choice to be
 
 Well, by approaching Android-based operating systems and devices yet again, if you scroll up back to the section where I showcased the list of available and reliable privacy-focused alternatives, some of them are still AOSP based, without having to rely on Google-based services, and that can still offer the same functionality and practicality at a high percentage. **In other words, it's still not a full replacement, but the compromise is quite low**.
 
-Depending on what alternative you would like to further dig into or if you only would like to try/test some applications and see how well they can blend with the daily habits that require you to rely on your phone (meaning that you do not have to replace your current OS, you just have to install the apps which are easily available via either Google Play store or third-party, but safe application stores and repositories), I have taken my time to compile a more comprehensive list of alternative apps that should be able to replace what you're currently running on your device, without having to worry about too much hassle in terms of their installation process (which is pretty straightforward), or the overall usage. You can check it out right here:
+Depending on what alternative you would like to further dig into or if you only would like to try/test some applications and see how well they can blend with the daily habits that require you to rely on your phone (meaning that you do not have to replace your current OS, you just have to install the apps which are easily available via either Google Play store or third-party, but safe application stores and repositories), I have taken my time to compile a more comprehensive list of alternative apps that should be able to replace what you're currently running on your device, without having to worry about too much hassle in terms of their installation process (which is pretty straightforward), or the overall usage:
 
-[LIST OF ALTERNATIVE APPS DOCUMENT]
+![image](https://github.com/Kipferl-OS/Privacy-oriented-Personal-Device-Experience-Project-PPDEP/blob/main/resources/Privacy%20is%20Awesome_Page_1.png?raw=false)
+
+![image](https://github.com/Kipferl-OS/Privacy-oriented-Personal-Device-Experience-Project-PPDEP/blob/main/resources/Privacy%20is%20Awesome_Page_2.png?raw=false)
+
+Feel free to check out and download the document for offline use right [here](https://github.com/Kipferl-OS/Privacy-oriented-Personal-Device-Experience-Project-PPDEP/blob/main/Privacy%20is%20Awesome.pdf).
 
 Also, as a bonus for reaching with your reading so far, to better strengthen my focus on the concept of relying on open-source software for heavy-duty tasks, here's the tree map that I was able to create via an application called **[Minder](https://github.com/phase1geo/Minder)**. 
 
