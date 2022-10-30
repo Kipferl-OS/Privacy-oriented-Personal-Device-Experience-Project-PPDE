@@ -10,9 +10,11 @@ There are more aspects to be discussed before directly jumping into the technica
 
 I have thus decided to split this guide into **three major parts**, each one with its separate points, being the following:
 
-**1. Introductory factors - a better understanding of the current trends related to smartphone usage & applications' behaviour.
-2. Installation procedure - porting Ubuntu Touch into Google Pixel 3a (installation steps).
-3. Application alternatives resources overview; recommendations for a privacy-oriented ecosystem.**
+**1. Introductory factors - a better understanding of the current trends related to smartphone usage & applications' behaviour.**
+
+**2. Installation procedure - porting Ubuntu Touch into Google Pixel 3a (installation steps).**
+
+**3. Application alternatives resources overview; recommendations for a privacy-oriented ecosystem.**
 
 Before further reading, if you are only interested in the **technical installation steps**, then I suggest you directly jump to the second part.
 
@@ -228,7 +230,8 @@ Before running the browser flashing suite, please remember to send your phone ba
 
 To make everything simpler for you, go ahead and watch this video, it is the best way I had at my disposal to showcase how convenient the installation process gets once using the browser-based flashing tool:
 
-[insert video1.mp4+video2.mp4 sau ce morti lui format are here]
+
+https://user-images.githubusercontent.com/92034177/198885445-b27384ed-1097-4f9f-9987-62f87b281492.mp4
 
 Overall, make sure your device is well connected to your computer, follow the steps shown in the video, and let the installer do the rest. You don't need to touch anything else on your device until it's all installed and ready to go. If, for some reason, the USB connection drops suddenly, usually after the firmware is downloaded, try refreshing the browser or even testing with another one, **as it turns out not every Chromium-based browser is compatible with the flashing tool from Google**.
 
@@ -236,6 +239,7 @@ After the installer is finished, as displayed in the video, do not mind that it 
 
 As of now, this proved to be the more "sophisticated" part of this whole installation guide. Now we can simply jump to the more enjoyable and most satisfying part of all :D!
 
+[android-flashing-tool-showcase.webm](https://raw.githubusercontent.com/Kipferl-OS/Privacy-oriented-Personal-Device-Experience-Project-PPDEP/main/resources/android-flashing-tool-showcase.webm)
 
 ## Installation procedure II-III-IV. Installing Ubuntu Touch on our freshly flashed and unlocked Google Pixel 3A
 
@@ -248,6 +252,10 @@ Head over [Ubuntu Touch for Google Pixel 3A support website](https://devices.ubu
 As usual, do make sure you have enabled developer mode (we've had our data wiped out on the device after the flashing process again), as well as the USB debugging mode & ADB timeout option. Once that's done, I hope the following quick video is also going to be enough of a showcase for the final installation step process:
 
 [ubports-installation-showcase.webm](https://user-images.githubusercontent.com/92034177/198746485-0f5507a5-8b49-444b-aaa7-f69b91dd524c.webm)
+
+Here's a quick photo of how the phone should boot and welcome you with the first configuration settings option:
+
+![image](https://github.com/Kipferl-OS/Privacy-oriented-Personal-Device-Experience-Project-PPDEP/blob/main/resources/ubtouch-first-boot.JPG?raw=false)
 
 If everything worked as expected on your side, congratulations, you have a complete Ubuntu powerhouse directly under your old (and possibly rusty) pixel device. You did it! You became most vendors' worst nightmare :)!
 
@@ -263,7 +271,6 @@ While I was writing out this guide, although I stated here and there, but I wasn
 At the same time, if, let's say, I had already had the Ubuntu Touch at my disposal before starting all of this, I could have easily relied on it with the daily tasks, and it is also worth mentioning that in terms of this OS's functionality, you will be noticing that there's a full operating terminal at your disposal, meaning that lots of the things that are accessible to be done through it (and implicitly via a Linux based distro) can be achieved inside the phone's environment! This is incredibly useful, especially if you are learning to become more "proficient" with Linux itself, meaning that many of the things learnt and done on the computer can be applied in the same manner on your phone. 
 
 Although it may sound more complex at the beginning, this is how I chose to perceive the idea of creating our ecosystem, free from all the application and data processing clutter, that you do not personally choose to subscribe to by your direct consent, but it's rather enforced by the currently available vendors on the market. With that, I wish you a wonderful journey ahead and I truly hope that this approach could be considered convenient enough for the typical user (highly depending on what type we are talking about and what preferences every one of us has in terms of using a modern smartphone) to stay productive, be fully connected and armed in the digital world, without having to bother about the obnoxious expense of having our personal data and privacy played with.
-
 
 
 ## Conclusions (II) Overview of a list of popular app alternatives that are privacy-oriented and available to use.
@@ -311,3 +318,31 @@ It's mesmerizing how tackling one particular subject can be extended to such a s
 I truly wish that all this information has proven to be useful to you and that it allowed you to nurture a more objective perspective on the subject. Until next time, good luck with your journey on how to make the digital mobile world a safer space for all of you :)!
 
 List of open-source tools that were used for compiling the whole project & references:
+
+**[UB Ports Project](https://ubuntu-touch.io/)**
+
+**[Ubuntu OS, distro that was used for compiling whole guide](https://ubuntu.com/)**
+
+**Markdown editors I used as personal choices: [Visual Studio Code](https://code.visualstudio.com/docs/languages/markdown) & **[StackEdit](https://stackedit.io/)**
+
+**[Treemapping open-source tool [Minder](https://github.com/phase1geo/Minder)**
+
+**Microsoft 365 office tools open-source alternative compatibile with Linux distributions: [OnlyOffice](https://github.com/ONLYOFFICE/CommunityServer)**
+
+**[Android SDK Platform Tols]**(https://developer.android.com/studio/releases/platform-tools)**
+
+**[AOSP (Android Open Source Project)](https://en.wikipedia.org/wiki/Android_(operating_system))**
+
+**Incremental source of inspiration, thanks to [Privacy Guides open-source project](https://www.privacyguides.org/)**
+
+**Privacy is Awesome list of open-source, free alternative apps. You can find it once again [here](https://github.com/Kipferl-OS/Privacy-oriented-Personal-Device-Experience-Project-PPDEP/blob/main/Privacy%20is%20Awesome.pdf)**
+
+**[Ungoogled Chromium browser](https://github.com/ungoogled-software/ungoogled-chromium)**
+
+**[Mentioned incident of malware detected on specific apps available via Apple's Appstore](https://lifehacker.com/great-now-the-apple-app-store-has-malware-too-1849386738)**
+
+**[Mentioned incident of dozens of malicious apps that were found available via Google's Play Store](https://www.bitdefender.com/blog/labs/real-time-behavior-based-detection-on-android-reveal-dozens-of-malicious-apps-on-google-play-store/)**
+
+**[Research Paper - Reengineering the user: Privacy concerns about personal data on smartphones](http://eprints.bournemouth.ac.uk/24543/7/Reengineering%20the%20user.pdf)**
+
+**[Social Media Privacy](https://epic.org/issues/consumer-privacy/social-media-privacy/)**
