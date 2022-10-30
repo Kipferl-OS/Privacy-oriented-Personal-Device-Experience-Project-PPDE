@@ -281,7 +281,7 @@ Not to repeat myself, but as I was taking all the notes for this project, I did 
 As I have been exclusively focusing on the whole installation process of having Ubuntu Touch working on a chosen smartphone (the Google Pixel 3a), and it is true, I did state the restricted list of devices that are compatible for doing this, there's another issue that, in my humble opinion, has its root cause on a more social/cultural field that there is to be tackled on. And that is, in simpler terms, each area/region (a country would be the best example to be taken) has built its social habits that can be observed via a statistical approach on what, as a vast majority, smartphone devices consumers tend to buy, which by default translates as what applications they are using at a larger scale and under which conditions these are used to aid daily tasks, either for essential or recreational purposes (but there can be more case scenarios), through the help of modern phones themselves.
 
 Take this as an example: 
-In Romania, **Whatsapp* is by far one of the most popular communication apps that are running on various vendor-sold devices. It got so popular that a few years up to nowadays, it started to come installed by default with the factory operating system, meaning that Whatsapp, in this case, is not to be considered a standard app that you can download at your personal choice via Google Play store (remember that we're talking only about Android, as Apple powered devices did not take this approach, although the final result just comes under a different form, so it's the same outcome at the end of the day), but it became and still is the essential application that is used as a current substitute for phone calls, plus other integrated popular features for a quick, efficient and stupid-proof communication (including photo sharing, voice messages, video calls etc.). Do you want to know the other alternative in the winner list? Sure thing! We have **Messenger** (still provided by Meta) and **Instagram** (what a surprise, this is also provided by...Meta). So we're pretty much talking about the same company, same privacy policy, data processing etc., just that it's well-hidden under different app form factors. 
+In Romania, **Whatsapp** is by far one of the most popular communication apps that are running on various vendor-sold devices. It got so popular that a few years up to nowadays, it started to come installed by default with the factory operating system, meaning that Whatsapp, in this case, is not to be considered a standard app that you can download at your personal choice via Google Play store (remember that we're talking only about Android, as Apple powered devices did not take this approach, although the final result just comes under a different form, so it's the same outcome at the end of the day), but it became and still is the essential application that is used as a current substitute for phone calls, plus other integrated popular features for a quick, efficient and stupid-proof communication (including photo sharing, voice messages, video calls etc.). Do you want to know the other alternative in the winner list? Sure thing! We have **Messenger** (still provided by Meta) and **Instagram** (what a surprise, this is also provided by...Meta). So we're pretty much talking about the same company, same privacy policy, data processing etc., just that it's well-hidden under different app form factors. 
 
 Of course, people are not to be blamed for this choice, Whatsapp mainly turned out of luck to be the most popular used app as it was seldom seen as an intrusive alternative for modern digital communication, and it was one of the least, if not the only viable option available for the general public to be used. And if that's taken through a social approach, people who do not possess much technical knowledge about the back-end processes, simply regard it as the *thing* that is used to talk to their relatives, friends, lovers etc. via voice or video calls. Of course, we have the social media functionality too, but I won't get much into that, as it targets the same concept. Even authorities here are relying on Whatsapp-based communication. What would be the reason for that? Well, there would be too many to attack, but a **poor digital infrastructure combined with a lack of digital-based research and domestic/local innovations in the tech field make more than sufficient of a mixture to end up with social and even cultural phenomena as this one**. 
 
@@ -319,30 +319,32 @@ I truly wish that all this information has proven to be useful to you and that i
 
 List of open-source tools that were used for compiling the whole project & references:
 
-**[UB Ports Project](https://ubuntu-touch.io/)**
+***[UB Ports](https://ubuntu-touch.io/) Project***
 
-**[Ubuntu OS, distro that was used for compiling whole guide](https://ubuntu.com/)**
+***[Ubuntu OS](https://ubuntu.com/), distro that was used for compiling whole guide***
 
-**Markdown editors I used as personal choices: [Visual Studio Code](https://code.visualstudio.com/docs/languages/markdown) & **[StackEdit](https://stackedit.io/)**
+***Markdown editors I used as personal choices: [Visual Studio Code](https://code.visualstudio.com/docs/languages/markdown) & [StackEdit](https://stackedit.io/)***
 
-**[Treemapping open-source tool [Minder](https://github.com/phase1geo/Minder)**
+***Treemapping open-source tool [Minder](https://github.com/phase1geo/Minder)***
 
-**Microsoft 365 office tools open-source alternative compatibile with Linux distributions: [OnlyOffice](https://github.com/ONLYOFFICE/CommunityServer)**
+***Microsoft 365 office tools open-source alternative compatibile with Linux distributions: [OnlyOffice](https://github.com/ONLYOFFICE/CommunityServer)***
 
-**[Android SDK Platform Tols]**(https://developer.android.com/studio/releases/platform-tools)**
+***[Android SDK Platform Tols](https://developer.android.com/studio/releases/platform-tools)***
 
-**[AOSP (Android Open Source Project)](https://en.wikipedia.org/wiki/Android_(operating_system))**
+***[AOSP (Android Open Source Project)](https://en.wikipedia.org/wiki/Android_(operating_system))***
 
-**Incremental source of inspiration, thanks to [Privacy Guides open-source project](https://www.privacyguides.org/)**
+***Incremental source of inspiration, thanks to [Privacy Guides open-source project](https://www.privacyguides.org/)***
 
-**Privacy is Awesome list of open-source, free alternative apps. You can find it once again [here](https://github.com/Kipferl-OS/Privacy-oriented-Personal-Device-Experience-Project-PPDEP/blob/main/Privacy%20is%20Awesome.pdf)**
+***Privacy is Awesome list of open-source, free alternative apps. You can find it once again [here](https://github.com/Kipferl-OS/Privacy-oriented-Personal-Device-Experience-Project-PPDEP/blob/main/Privacy%20is%20Awesome.pdf)***
 
-**[Ungoogled Chromium browser](https://github.com/ungoogled-software/ungoogled-chromium)**
+***[Ungoogled Chromium](https://github.com/ungoogled-software/ungoogled-chromium) browser***
 
-**[Mentioned incident of malware detected on specific apps available via Apple's Appstore](https://lifehacker.com/great-now-the-apple-app-store-has-malware-too-1849386738)**
+***Mentioned incident of [malware detected on specific apps available via Apple's Appstore](https://lifehacker.com/great-now-the-apple-app-store-has-malware-too-1849386738)***
 
-**[Mentioned incident of dozens of malicious apps that were found available via Google's Play Store](https://www.bitdefender.com/blog/labs/real-time-behavior-based-detection-on-android-reveal-dozens-of-malicious-apps-on-google-play-store/)**
+***Mentioned incident of [dozens of malicious apps that were found available via Google's Play Store](https://www.bitdefender.com/blog/labs/real-time-behavior-based-detection-on-android-reveal-dozens-of-malicious-apps-on-google-play-store/)***
 
-**[Research Paper - Reengineering the user: Privacy concerns about personal data on smartphones](http://eprints.bournemouth.ac.uk/24543/7/Reengineering%20the%20user.pdf)**
+***Research Paper - [Reengineering the user: Privacy concerns about personal data on smartphones](http://eprints.bournemouth.ac.uk/24543/7/Reengineering%20the%20user.pdf)***
 
-**[Social Media Privacy](https://epic.org/issues/consumer-privacy/social-media-privacy/)**
+***Optional(no contents were used from this particular source), but an amazing read to check on: [The Impact of User Control and Transparency in App Design on Privacy Concerns and Behavior of Mobile App Users](https://academicworks.cuny.edu/cgi/viewcontent.cgi?article=5344&context=gc_etds)***
+
+***[Social Media Privacy](https://epic.org/issues/consumer-privacy/social-media-privacy/)***
